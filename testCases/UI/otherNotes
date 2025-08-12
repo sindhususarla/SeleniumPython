@@ -1,0 +1,18 @@
+XPath:
+
+//label[text()='Full Name']
+//label[contains(text(),'Full')]
+//label[2] ---- if there are multiple labels we can index it
+//*[@placeholder='First Name' and @ng-model="FirstName"]
+//*[@placeholder='First Name' or @ng-model="FirstName"]
+
+//form[@id='basicBoostrap']/child::div ------ direct children that are div under form tag
+//form[@id='basicBoostrap']/parent::div ------ direct parent that are div above form tag
+//form[@id='basicBoostrap']/ancestor::div ---- all parent and granparents above form tag
+
+//input[@id='checkbox1']//following-sibling::label ----
+//input[@id='checkbox1']//preceding-sibling::label
+
+//h3[normalize-space()='Orders']//following-sibling::div/button[@data-chart-period='month']
+//tbody/tr[3]/td[2]/span[text()='Pending']
+//a[@aria-label='Tesla Logo']//*[name()='svg']
